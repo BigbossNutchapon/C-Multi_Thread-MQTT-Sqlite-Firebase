@@ -1,0 +1,30 @@
+[Unit]
+Description=MQTT Memory Monitor Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=useros
+Group=useros
+WorkingDirectory=/home/useros/workshop/mqtt
+ExecStart=/home/useros/workshop/mqtt/mqtt_app
+Restart=always
+RestartSec=10
+
+# Environment variables
+Environment=HOME=/home/useros
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Security settings
+ReadWriteDirectories=/home/useros/workshop/mqtt
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=read-only
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
