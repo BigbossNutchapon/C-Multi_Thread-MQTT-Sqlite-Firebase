@@ -46,7 +46,9 @@
 ทำงานร่วมกับระบบ
 
 ## Youtube
-https://youtu.be/54EPDwozSCk
+[https://youtu.be/54EPDwozSCk](https://www.youtube.com/watch?v=54EPDwozSCk)
+or
+[https://www.youtube.com/watch?v=ET7OLDrJD6g](https://www.youtube.com/watch?v=ET7OLDrJD6g)
 
 ## ECE-Flyhigh
 Thammasat University TESA 2024
